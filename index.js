@@ -17,6 +17,7 @@ const configServidor = new Map();
 
 // Classes disponíveis do Ragnarok
 const CLASSES_RO = [
+    'Qualquer Classe',
     'Cavaleiro Rúnico',
     'Guardião Real',
     'Arcano',
