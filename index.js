@@ -494,7 +494,7 @@ client.on('interactionCreate', async interaction => {
                 break;
                 
             case 'configbot':
-                if (!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator)) {
+                if (!interaction.member.permissions.has(PermissionsBitField.Flags.Administrator || PermissionsBitField.Flags.ManageRoles)) {
                     return await interaction.reply({ 
                         content: '❌ Apenas administradores podem usar este comando!', 
                         ephemeral: true 
