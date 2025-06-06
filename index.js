@@ -237,14 +237,7 @@ client.on('interactionCreate', async interaction => {
     
     try {
         switch (commandName) {
-            case 'criargrupo':
-                if (!podecriarGrupos(interaction.member, interaction.guildId)) {
-                    return await interaction.reply({ 
-                        content: '❌ Você não tem permissão para criar grupos!', 
-                        ephemeral: true 
-                    });
-                }
-                
+            case 'criargrupo':                
                 const modal = new ModalBuilder()
                     .setCustomId('criar_grupo_modal')
                     .setTitle('Criar Novo Grupo');
